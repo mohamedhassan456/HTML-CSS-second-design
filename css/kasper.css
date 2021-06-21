@@ -1,0 +1,142 @@
+/* Start variables */
+:root {
+  --main-color: #19c8fa;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #222;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container:before {
+  content: "";
+  position: absolute;
+  background-color: #a2a2a2;
+  bottom: 0;
+  height: 1px;
+  width: calc(100% - 30px);
+  left: 15px;
+}
+header .logo img {
+  height: 40px;
+  transition: 0.5s;
+}
+header .logo img:hover {
+  height: 70px;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  padding: 40px 20px;
+  z-index: 2;
+  position: relative;
+}
+header nav ul li a.active{
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+header nav ul li a:hover  {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  font-size: 22px;
+  }
+  header nav ul:hover li a.active {
+  border-bottom: 0;
+  color: white;
+}
+header nav ul li a.active:hover {
+  color: #19f2fa;
+  font-size: 22px;
+  border-bottom: 1px solid #19f2fa;
+}
+header nav .form {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin-left: 30px;
+  border-left: 1px solid white;
+  transition: 0.3s;
+}
+header nav .form i {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header nav .form i:hover {
+  font-size: 26px;
+  color: #19fae7;
+}
+header nav .form:hover {
+  transform: translateX(-10px);
+}
+/* End Header */

@@ -1,8 +1,52 @@
 /* Start variables */
 :root {
   --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 50%);
 }
 /* End Variables */
+
+/* Start Components */
+.main-heading {
+  text-align: center;
+  margin: 50px;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+/* End Components */
 
 /* Start Global Rules */
 * {
@@ -18,7 +62,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #222;
+  /* background-color: #222; */
   overflow-x: hidden;
 }
 ul {
@@ -55,6 +99,7 @@ ul {
 header {
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 @media (max-width: 750px) {
   header {
@@ -91,7 +136,7 @@ header .logo img {
   transition: 0.5s;
 }
 header .logo img:hover {
-  transform: scale(70%);
+  transform: scale(105%);
 }
 header nav {
   flex: 1;
@@ -246,5 +291,124 @@ header nav .form:hover i {
   color: #19fae7;
   padding-bottom: -200px;
 }
+/* End Header */
 
+/* Start Header */
+.landing {
+  min-height: 100vh;
+  background-color: #1f2021;
+  background-image: url("../images/owl.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.landing .container {
+width: 100%;
+}
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+  z-index: 0;
+}
+.landing .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+  background-color: var(--transparent-color);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+} 
+.landing .text .content {
+  max-width: 500px;
+} 
+@media (max-width: 950px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 100%;
+  }
+}
+.landing .text .content h2 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.landing .text .content p {
+  font-size: 14px;
+  line-height: 2;
+}
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.landing .change-background:hover {
+  cursor: pointer;
+  color: transparent;
+}
+@media (max-width: 750px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+.landing .fa-angle-left {
+  left: 15px;
+}
+.landing .fa-angle-right {
+  right: 15px;
+}
+.landing .bullets {
+  width: fit-content;
+}
+.landing .bullets ul {
+display: flex;
+position: absolute;
+bottom: 15px;
+right: 50%;
+transform: translatex(50%);
+width: fit-content;
+}
+.landing .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.landing .bullets ul li.active {
+  background-color: var(--main-color);
+  border-color: #5fd4f5;
+  transition: 0.3s;
+}
+.landing .bullets ul:hover li.active{
+  background-color: transparent;
+  border-color: white;
+  cursor: pointer;
+}
+.landing .bullets ul li.active:hover{
+  background-color: var(--main-color);
+  border-color: #5fd4f5;
+  cursor: pointer;
+  transform: scale(110%);
+}
+.landing .bullets ul li:hover {
+  background-color: var(--main-color);
+  border-color: #5fd4f5;
+  cursor: pointer;
+  transform: scale(110%);
+}
 /* End Header */

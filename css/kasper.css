@@ -264,7 +264,7 @@ header nav ul:hover li a.active {
 }
 header nav ul li a.active:hover {
   color: #19f2fa;
-  font-size: 14px;
+  font-size: 13px;
   border-bottom: 1px solid #19f2fa;
 }
 header nav .form {

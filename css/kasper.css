@@ -107,14 +107,14 @@ header {
 }
 @media (max-width: 750px) {
   header {
-    transform: scale(60%);
+    transform: scale(70%);
     display: flex;
     justify-content: center;
   }
 }
 @media (max-width: 450px) {
   header {
-    transform: scale(40%);
+    transform: scale(50%);
     display: flex;
     justify-content: center;
   }
@@ -256,7 +256,7 @@ header nav ul li a.active {
 header nav ul li a:hover {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
-  font-size: 16px;
+  transform: scale(105%);
 }
 header nav ul:hover li a.active {
   border-bottom: 0;
@@ -264,7 +264,7 @@ header nav ul:hover li a.active {
 }
 header nav ul li a.active:hover {
   color: #19f2fa;
-  font-size: 16px;
+  transform: scale(110%);
   border-bottom: 1px solid #19f2fa;
 }
 header nav .form {
@@ -291,7 +291,7 @@ header nav .form:hover {
   transform: rotate(-90deg);
 }
 header nav .form:hover i {
-  font-size: 26px;
+  transform: scale(110%);
   color: #19fae7;
   padding-bottom: -200px;
 }

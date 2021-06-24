@@ -140,7 +140,7 @@ header .logo img {
   transition: 0.5s;
 }
 header .logo img:hover {
-  transform: scale(105%);
+  transform: scale(102%);
 }
 header nav {
   flex: 1;
@@ -241,11 +241,11 @@ header nav ul {
 }
 header nav ul li a {
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   text-decoration: none;
   display: block;
   transition: 0.3s;
-  padding: 40px 25px;
+  padding: 40px 15px;
   z-index: 2;
   position: relative;
 }
@@ -256,7 +256,7 @@ header nav ul li a.active {
 header nav ul li a:hover {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
-  font-size: 22px;
+  font-size: 16px;
 }
 header nav ul:hover li a.active {
   border-bottom: 0;
@@ -264,7 +264,7 @@ header nav ul:hover li a.active {
 }
 header nav ul li a.active:hover {
   color: #19f2fa;
-  font-size: 22px;
+  font-size: 16px;
   border-bottom: 1px solid #19f2fa;
 }
 header nav .form {
@@ -442,6 +442,7 @@ width: fit-content;
 }
 .services .srv-box:hover {
 transform: scale(95%);
+cursor: pointer;
 }
 .services .srv-box i {
   margin-right: 35px;
@@ -554,6 +555,10 @@ transform: scale(95%);
   justify-content: center;
   align-items: center;
   font-size: 15px;
+}
+.design .text ul li:hover{
+cursor: pointer;
+transform: translate(95%);
 }
 .design .text ul li::before {
   font-family: "Font Awesome 5 Free";

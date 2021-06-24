@@ -80,18 +80,21 @@ ul {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    overflow-x: hidden;
   }
 }
 /* Medium */
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    overflow-x: hidden;
   }
 }
 /* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    overflow-x: hidden;
   }
 }
 /* End Global Rules */
@@ -238,11 +241,11 @@ header nav ul {
 }
 header nav ul li a {
   color: white;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
   display: block;
   transition: 0.3s;
-  padding: 40px 20px;
+  padding: 40px 25px;
   z-index: 2;
   position: relative;
 }
@@ -301,10 +304,12 @@ header nav .form:hover i {
   background-image: url("../images/owl.jpg");
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 }
 
 .landing .container {
 width: 100%;
+overflow-x: hidden;
 }
 .landing .overlay {
   position: absolute;
@@ -419,6 +424,8 @@ width: fit-content;
 .services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  min-height: fit-content;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -434,7 +441,7 @@ width: fit-content;
   transition: 0.3s;
 }
 .services .srv-box:hover {
-transform: scale(105%);
+transform: scale(95%);
 }
 .services .srv-box i {
   margin-right: 35px;
@@ -446,6 +453,7 @@ transform: scale(105%);
     flex-direction: column;
     text-align: center;
     margin-bottom: 40px;
+    overflow-x: hidden;
   }
   .services .srv-box i {
     margin: 0 0 30px;
@@ -512,22 +520,26 @@ transform: scale(105%);
   .design .text {
     min-width: 100%;
     max-height: 50%;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 555px) {
   .design .image img {
   transform: translateX(-15%);
+  overflow-x: hidden;
   }
 }
 @media (max-width: 350px) {
   .design .text {
     padding: 5px;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 350px) {
   .design .text h2, 
   .design .text ul li {
     font-size: 10px;
+    overflow-x: hidden;
   }
 }
 .design .text h2 {

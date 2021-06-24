@@ -256,7 +256,7 @@ header nav ul li a.active {
 header nav ul li a:hover {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
-  transform: scale(105%);
+  font-size: 13px;
 }
 header nav ul:hover li a.active {
   border-bottom: 0;
@@ -264,7 +264,7 @@ header nav ul:hover li a.active {
 }
 header nav ul li a.active:hover {
   color: #19f2fa;
-  transform: scale(110%);
+  font-size: 14px;
   border-bottom: 1px solid #19f2fa;
 }
 header nav .form {
@@ -291,7 +291,7 @@ header nav .form:hover {
   transform: rotate(-90deg);
 }
 header nav .form:hover i {
-  transform: scale(110%);
+  font-size: 19px;
   color: #19fae7;
   padding-bottom: -200px;
 }

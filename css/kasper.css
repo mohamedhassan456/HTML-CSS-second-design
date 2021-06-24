@@ -107,14 +107,14 @@ header {
 }
 @media (max-width: 750px) {
   header {
-    transform: scale(70%);
+    transform: scale(60%);
     display: flex;
     justify-content: center;
   }
 }
 @media (max-width: 450px) {
   header {
-    transform: scale(50%);
+    transform: scale(40%);
     display: flex;
     justify-content: center;
   }
@@ -140,7 +140,7 @@ header .logo img {
   transition: 0.5s;
 }
 header .logo img:hover {
-  transform: scale(102%);
+  transform: scale(110%);
 }
 header nav {
   flex: 1;
@@ -556,10 +556,7 @@ cursor: pointer;
   align-items: center;
   font-size: 15px;
 }
-.design .text ul li:hover{
-cursor: pointer;
-transform: translate(95%);
-}
+
 .design .text ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f108";
